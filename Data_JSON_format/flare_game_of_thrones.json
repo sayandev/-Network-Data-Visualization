@@ -1,8 +1,9 @@
 {
-  "name":"Game_of_Thrones_Houses" [
+  "name":"Game_of_Thrones_Houses",
+	"children":  [
     {
       "name": "Starks: Wardens of the North",
-      "people": [
+      "children": [
         {"name": "Eddard \"Ned\" Stark", "size": 5731},
         {"name": "Benjen Stark", "size": 3812},
         {"name": "Robb Stark", "size": 2202},
@@ -17,7 +18,7 @@
 
     {
       "name": "Lannisters: Always pays their Debt",
-      "people": [
+      "children": [
         {"name": "Tywin Lannister", "size": 2047},
         {"name": "Tyrion Lannister", "size": 8746},
         {"name": "Jaime Lannister", "size": 4294},
@@ -28,7 +29,7 @@
 
     {
       "name": "Baratheons: fight each other",
-      "people": [
+      "children": [
         {"name": "King Robert Baratheon", "size": 1041},
         {"name": "Stannis Baratheon", "size": 2202},
         {"name": "Renly Baratheon", "size": 2047},
@@ -44,7 +45,7 @@
     {
       "name": "Targaryens:Fire and Blood",
       "wikiSuffix": "House_Targaryen",
-      "people": [
+      "children": [
         {"name": "Daenerys Targaryen", "size": 9800},
         {"name": "Viserys Targaryen", "size": 3331}
       ]
@@ -54,7 +55,7 @@
 
     {
       "name": "Greyjoys:ironborn",
-      "people": [
+      "children": [
         {"name": "Balon Greyjoy", "size": 1041},
         {"name": "Theon Greyjoy", "size": 5517},
         {"name": "Yara Greyjoy", "size": 1116}
@@ -64,7 +65,7 @@
 
     {
       "name": "Tyrells:blood runs quite warm",
-      "people": [
+      "children": [
         {"name": "Margaery (Tyrell) Baratheon", "size": 4294},
         {"name": "Loras Tyrell", "size": 222}
 
@@ -73,7 +74,7 @@
 
     {
       "name": "Tullys:Family, Duty, Honor.",
-      "people": [
+      "children": [
         {"name": "Catelyn (Tully) Stark", "size": 9201},
         {"name": "Lysa (Tully) Arryn", "size": 5176},
         {"name": "Edmure Tully", "size": 721},
@@ -84,7 +85,7 @@
 
     {
       "name": "Redwyne:Highgarden",
-      "people": [
+      "children": [
         {"name": "Olenna (Redwyne) Tyrell", "size": 2220}
 
       ]
@@ -92,7 +93,7 @@
 
     {
       "name": "Freys: bridge of the Twins",
-      "people": [
+      "children": [
         {"name": "Walder Frey", "size": 6006}
 
       ]
@@ -100,7 +101,7 @@
 
     {
       "name": "Arryns:Narrow Sea ",
-      "people": [
+      "children": [
         {"name": "Jon Arryn", "size": 2165}
 
       ]
@@ -108,7 +109,7 @@
 
     {
       "name": "Dothrakis:horselords",
-      "people": [
+      "children": [
         {"name": "Khal Drogo", "size": 7654}
 
       ]
