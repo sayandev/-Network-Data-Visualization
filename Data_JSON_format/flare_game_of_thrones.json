@@ -1,0 +1,118 @@
+{
+  "Game_of_Thrones_Houses": [
+    {
+      "name": "Starks: Wardens of the North",
+      "people": [
+        {"name": "Eddard \"Ned\" Stark", "size": 5731},
+        {"name": "Benjen Stark", "size": 3812},
+        {"name": "Robb Stark", "size": 2202},
+        {"name": "Sansa Stark", "size": 3416},
+        {"name": "Arya Stark", "size": 4294},
+        {"name": "Brandon \"Bran\" Stark", "size": 2220},
+        {"name": "Rickon Stark", "size": 772},
+        {"name": "Jon Snow", "size": 7074}
+      ]
+    },
+
+
+    {
+      "name": "Lannisters: Always pays their Debt",
+      "people": [
+        {"name": "Tywin Lannister", "size": 2047},
+        {"name": "Tyrion Lannister", "size": 8746}},
+        {"name": "Jaime Lannister", "size": 4294},
+        {"name": "Queen Cersei", "size": 9800}
+      ]
+    },
+
+
+    {
+      "name": "Baratheons: fight each other",
+      "people": [
+        {"name": "King Robert Baratheon", "size": 1041},
+        {"name": "Stannis Baratheon", "size": 2202},
+        {"name": "Renly Baratheon", "size": 2047},
+        {"name": "Joffrey Baratheon", "size": 8746},
+        {"name": "Tommen Baratheon", "size": 1041},
+        {"name": "Myrcella Baratheon", "size": 1116}
+      ]
+    },
+
+
+
+
+    {
+      "name": "Targaryens:Fire and Blood",
+      "wikiSuffix": "House_Targaryen",
+      "people": [
+        {"name": "Daenerys Targaryen", "size": 9800},
+        {"name": "Viserys Targaryen", "size": 3331}
+      ]
+    },
+
+
+
+    {
+      "name": "Greyjoys:ironborn",
+      "people": [
+        {"name": "Balon Greyjoy", "size": 1041},
+        {"name": "Theon Greyjoy", "size": 5517},
+        {"name": "Yara Greyjoy", "size": 1116}
+
+      ]
+    },
+
+    {
+      "name": "Tyrells:blood runs quite warm",
+      "people": [
+        {"name": "Margaery (Tyrell) Baratheon", "size": 4294},
+        {"name": "Loras Tyrell", "size": 222}
+
+      ]
+    },
+
+    {
+      "name": "Tullys:Family, Duty, Honor.",
+      "people": [
+        {"name": "Catelyn (Tully) Stark", "size": 9201},
+        {"name": "Lysa (Tully) Arryn", "size": 5176},
+        {"name": "Edmure Tully", "size": 721},
+        {"name": "Brynden Tully", "size": 1314}
+
+      ]
+    },
+
+    {
+      "name": "Redwyne:Highgarden",
+      "people": [
+        {"name": "Olenna (Redwyne) Tyrell", "size": 2220}
+
+      ]
+    },
+
+    {
+      "name": "Freys: bridge of the Twins",
+      "people": [
+        {"name": "Walder Frey", "size": 6006}
+
+      ]
+    },
+
+    {
+      "name": "Arryns:Narrow Sea ",
+      "people": [
+        {"name": "Jon Arryn", "size": 2165}
+
+      ]
+    },
+
+    {
+      "name": "Dothrakis:horselords",
+      "people": [
+        {"name": "Khal Drogo", "size": 7654}
+
+      ]
+    }
+
+  ]
+}
