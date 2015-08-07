@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body> 
+ <style>
+.link {
+fill: none;
+stroke: #ccc;
+opacity: 0.45;
+stroke-width: 1.5px;
+}
+.node circle {
+stroke: #fff;
+opacity: 0.9;
+stroke-width: 1.5px;
+}
+.node:not(:hover) .nodetext {
+display: none;
+}
+text {
+font: 8px serif;
+opacity: 0.9;
+pointer-events: none;
+}
+</style>
+
+<script src=http://d3js.org/d3.v3.min.js></script>
+
+<script> 
+ var width = 1000
+height = 1000;
+
+var diameter = 800;
+
+var tree = d3.layout.tree()
+.size([360, diameter / 2 - 120])
+.separation(function(a, b) { return (a.parent == b.parent ? 1 : 2) / a.depth; });
+
+var diagonal = d3.svg.diagonal.radial()
+.projection(function(d) { return [d.y, d.x / 180 * Math.PI]; });
+
+var svg = d3.select("body").append("svg")
+.attr("width", width)
+.attr("height", height)
+.append("g")
+.attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")"); 
+ var root = {"name":"Game_of_Thrones_Houses","children":[{"name":"Starks: Wardens of the North","children":[{"name":"Eddard \"Ned\" Stark","size":5731},{"name":"Benjen Stark","size":3812},{"name":"Robb Stark","size":2202},{"name":"Sansa Stark","size":3416},{"name":"Arya Stark","size":4294},{"name":"Brandon \"Bran\" Stark","size":2220},{"name":"Rickon Stark","size":772},{"name":"Jon Snow","size":7074}]},{"name":"Lannisters: Always pays their Debt","children":[{"name":"Tywin Lannister","size":2047},{"name":"Tyrion Lannister","size":8746},{"name":"Jaime Lannister","size":4294},{"name":"Queen Cersei","size":9800}]},{"name":"Baratheons: fight each other","children":[{"name":"King Robert Baratheon","size":1041},{"name":"Stannis Baratheon","size":2202},{"name":"Renly Baratheon","size":2047},{"name":"Joffrey Baratheon","size":8746},{"name":"Tommen Baratheon","size":1041},{"name":"Myrcella Baratheon","size":1116}]},{"name":"Targaryens:Fire and Blood","wikiSuffix":"House_Targaryen","children":[{"name":"Daenerys Targaryen","size":9800},{"name":"Viserys Targaryen","size":3331}]},{"name":"Greyjoys:ironborn","children":[{"name":"Balon Greyjoy","size":1041},{"name":"Theon Greyjoy","size":5517},{"name":"Yara Greyjoy","size":1116}]},{"name":"Tyrells:blood runs quite warm","children":[{"name":"Margaery (Tyrell) Baratheon","size":4294},{"name":"Loras Tyrell","size":222}]},{"name":"Tullys:Family, Duty, Honor.","children":[{"name":"Catelyn (Tully) Stark","size":9201},{"name":"Lysa (Tully) Arryn","size":5176},{"name":"Edmure Tully","size":721},{"name":"Brynden Tully","size":1314}]},{"name":"Redwyne:Highgarden","children":[{"name":"Olenna (Redwyne) Tyrell","size":2220}]},{"name":"Freys: bridge of the Twins","children":[{"name":"Walder Frey","size":6006}]},{"name":"Arryns:Narrow Sea ","children":[{"name":"Jon Arryn","size":2165}]},{"name":"Dothrakis:horselords","children":[{"name":"Khal Drogo","size":7654}]}]} ; 
+ var nodes = tree.nodes(root),
+links = tree.links(nodes);
+
+var link = svg.selectAll(".link")
+.data(links)
+.enter().append("path")
+.attr("class", "link")
+.attr("d", diagonal);
+
+var node = svg.selectAll(".node")
+.data(nodes)
+.enter().append("g")
+.attr("class", "node")
+.attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")"; })
+.on("mouseover", mouseover)
+.on("mouseout", mouseout);
+
+node.append("circle")
+.attr("r", 4.5)
+.style("fill", "#3182bd");
+
+node.append("text")
+.attr("dy", ".31em")
+.attr("text-anchor", function(d) { return d.x < 180 ? "start" : "end"; })
+.attr("transform", function(d) { return d.x < 180 ? "translate(8)" : "rotate(180)translate(-8)"; })
+.style("fill", "#3182bd")
+.text(function(d) { return d.name; });
+
+function mouseover() {
+d3.select(this).select("circle").transition()
+.duration(750)
+.attr("r", 9)
+d3.select(this).select("text").transition()
+.duration(750)
+.attr("dy", ".31em")
+.attr("text-anchor", function(d) { return d.x < 180 ? "start" : "end"; })
+.attr("transform", function(d) { return d.x < 180 ? "translate(8)" : "rotate(180)translate(-8)"; })
+.style("stroke-width", ".5px")
+.style("font", "15.2px serif")
+.style("opacity", 1);
+}
+
+function mouseout() {
+d3.select(this).select("circle").transition()
+.duration(750)
+.attr("r", 4.5)
+d3.select(this).select("text").transition()
+.duration(750)
+.attr("dy", ".31em")
+.attr("text-anchor", function(d) { return d.x < 180 ? "start" : "end"; })
+.attr("transform", function(d) { return d.x < 180 ? "translate(8)" : "rotate(180)translate(-8)"; })
+.style("font", "8px serif")
+.style("opacity", 0.9);
+}
+
+d3.select(self.frameElement).style("height", diameter - 150 + "px");
+
+</script>
+ </body>
