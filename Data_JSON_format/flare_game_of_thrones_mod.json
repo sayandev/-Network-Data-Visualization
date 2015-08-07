@@ -22,11 +22,12 @@
         {"name": "Tywin Lannister", "size": 2047},
         {"name": "Tyrion Lannister", "size": 8746},
         {"name": "Jaime Lannister", "size": 4294},
-        {"name": "Queen Cersei", "size": 9800},
+        {"name": "Queen Cersei", 
 		 "children":[
 		 {"name": "Joffrey Baratheon", "size": 8746},
 		 {"name": "Tommen Baratheon", "size": 1041}
 		 ]
+		}
 		 
       ]
     },
