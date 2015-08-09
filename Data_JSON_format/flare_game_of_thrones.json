@@ -2,7 +2,7 @@
   "name":"Game_of_Thrones_Houses",
 	"children":  [
     {
-      "name": "Starks: Wardens of the North",
+      "name": "Starks: 'Wardens of the North'",
       "children": [
         {"name": "Eddard \"Ned\" Stark", "size": 5731},
         {"name": "Benjen Stark", "size": 3812},
@@ -17,7 +17,7 @@
 
 
     {
-      "name": "Lannisters: Always pays their Debt",
+      "name": "Lannisters: 'Always pays their Debt'",
       "children": [
         {"name": "Tywin Lannister", "size": 2047},
         {"name": "Tyrion Lannister", "size": 8746},
@@ -28,7 +28,7 @@
 
 
     {
-      "name": "Baratheons: fight each other",
+      "name": "Baratheons: 'Fight each other'",
       "children": [
         {"name": "King Robert Baratheon", "size": 1041},
         {"name": "Stannis Baratheon", "size": 2202},
@@ -43,7 +43,7 @@
 
 
     {
-      "name": "Targaryens:Fire and Blood",
+      "name": "Targaryens: 'Fire and Blood'",
       "wikiSuffix": "House_Targaryen",
       "children": [
         {"name": "Daenerys Targaryen", "size": 9800},
@@ -54,7 +54,7 @@
 
 
     {
-      "name": "Greyjoys:ironborn",
+      "name": "Greyjoys:'Ironborn'",
       "children": [
         {"name": "Balon Greyjoy", "size": 1041},
         {"name": "Theon Greyjoy", "size": 5517},
@@ -64,7 +64,7 @@
     },
 
     {
-      "name": "Tyrells:blood runs quite warm",
+      "name": "Tyrells: 'Blood runs quite warm'",
       "children": [
         {"name": "Margaery (Tyrell) Baratheon", "size": 4294},
         {"name": "Loras Tyrell", "size": 222}
@@ -73,7 +73,7 @@
     },
 
     {
-      "name": "Tullys:Family, Duty, Honor.",
+      "name": "Tullys: 'Family, Duty, Honor'",
       "children": [
         {"name": "Catelyn (Tully) Stark", "size": 9201},
         {"name": "Lysa (Tully) Arryn", "size": 5176},
@@ -84,7 +84,7 @@
     },
 
     {
-      "name": "Redwyne:Highgarden",
+      "name": "Redwyne: 'Highgarden'",
       "children": [
         {"name": "Olenna (Redwyne) Tyrell", "size": 2220}
 
@@ -92,7 +92,7 @@
     },
 
     {
-      "name": "Freys: bridge of the Twins",
+      "name": "Freys: 'Bridge of the Twins'",
       "children": [
         {"name": "Walder Frey", "size": 6006}
 
@@ -100,7 +100,7 @@
     },
 
     {
-      "name": "Arryns:Narrow Sea ",
+      "name": "Arryns: 'Narrow Sea'",
       "children": [
         {"name": "Jon Arryn", "size": 2165}
 
@@ -108,7 +108,7 @@
     },
 
     {
-      "name": "Dothrakis:horselords",
+      "name": "Dothrakis: 'Horselords'",
       "children": [
         {"name": "Khal Drogo", "size": 7654}
 
