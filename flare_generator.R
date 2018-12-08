@@ -1,7 +1,7 @@
 # Download JSON data
 library(d3Network)
 library(RCurl)
-URL <- "https://rawgit.com/sayandev/Network-Data-Visualization/master/Data_JSON_format/flare_game_of_thrones.json"
+URL <- "https://cdn.jsdelivr.net/gh/sayandev/Network-Data-Visualization/Data_JSON_format/flare_game_of_thrones.json"
 Data_Flare <- getURL(URL, ssl.verifypeer = FALSE)
 
 
